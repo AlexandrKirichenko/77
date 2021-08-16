@@ -1,0 +1,22 @@
+.ico_flex {
+  @include bg-img ("/img/icons/features/1.svg",5.1rem)
+}
+.ico_apps {
+  @include bg-img ("/img/icons/features/2.svg",5.1rem)
+}
+.ico_schedul {
+  @include bg-img ("/img/icons/features/3.svg",5.1rem)
+}
+.ico_templates {
+  @include bg-img ("/img/icons/features/4.svg",5.1rem)
+}
+.ico_widgets {
+  @include bg-img ("/img/icons/features/5.svg",5.1rem)
+}
+.ico_realtime{
+  @include bg-img ("/img/icons/features/6.svg",5.1rem)
+}
+
+.ico__star {
+  @include bg-img ("/img/icons/features/star.svg",2.4rem)
+}

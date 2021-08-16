@@ -1,0 +1,18 @@
+.signage{
+  background: $color-background;
+}
+
+.layout-2-column {
+  @include columns($width: 52.1rem);
+  @include font(2.2rem, 3rem, bold);
+  color: $color-hading;
+}
+
+.signage__text {
+  text-align: center;
+}
+
+.signage__block {
+  background: $color-white;
+  margin-top: 3.5rem;
+}

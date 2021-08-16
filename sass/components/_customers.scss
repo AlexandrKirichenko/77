@@ -1,0 +1,35 @@
+.customers {
+  padding: 51px 0 49px 0;
+  @include mobile {
+    padding: 1rem 0;
+  }
+}
+.customers__container {
+  min-width: 154px;
+  @include flex(space-between);
+  @include mobile {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.customers__logo {
+  display: inline-block;
+}
+
+.insta{
+  @include bg-customers("/img/customers/insta.png",5.4rem, 22rem);
+}
+
+
+.twitter {
+  @include bg-customers("/img/customers/twitter.png",4.5rem, 24.2rem);
+}
+
+.cnn {
+  @include bg-customers("/img/customers/cnn2.png",6rem, 13rem);
+}
+
+.facebook {
+  @include bg-customers("/img/customers/fb.png",4.6rem, 23.8rem);
+}

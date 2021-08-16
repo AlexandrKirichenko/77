@@ -1,0 +1,18 @@
+.ico_fb{
+  @include bg-img ("/img/icons/footer/fb.svg",2.4rem);
+}
+.icon ico_fb {
+  padding:1rem ;
+  margin: 1rem;
+}
+.ico_linkedin{
+  @include bg-img ("/img/icons/footer/linkedin.svg",2.4rem);
+}
+
+.ico_insta{
+  @include bg-img ("/img/icons/footer/insta.svg",2.4rem);
+}
+
+.ico_twitter{
+  @include bg-img ("/img/icons/footer/twitter.svg",2.4rem);
+}

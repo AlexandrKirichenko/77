@@ -1,0 +1,48 @@
+//Placeholder
+%transition {
+  transition: all .3s ease-out;
+}
+
+@mixin font ($size, $height, $weight : 600, $style : normal) {
+  font-size: $size;
+  font-style: $style;
+  font-weight: $weight;
+  line-height: $height;
+}
+
+@mixin flex ( $justify: center,$align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin columns($width) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  >* {
+    flex-basis: $width;
+  }
+}
+
+@mixin bg-img($url,$height,$width : $height) {
+  background-image: url($url);
+  height: $height;
+  width: $width;
+}
+
+@mixin bg-customers($url,$height,$width : $height) {
+  background: url($url) no-repeat center;
+  height: $height;
+  width: $width;
+}
+
+
+@mixin mobile {
+  @media (max-width: $mobile-bid-width) { @content;}
+}
+
+@mixin mobilesmall {
+  @media (max-width: $mobile-small-width) { @content;}
+}
+

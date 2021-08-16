@@ -1,0 +1,98 @@
+.sidebar {
+  @include mobile {
+    display: none;
+  }
+  background-color: $color-background;
+  z-index: 100;
+  width: 100%;
+}
+
+.sidebar__container {
+  padding: 1px 0 1px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  padding-left: 0
+}
+
+.menu__item {
+  @include flex(flex-start);
+  margin-right: 1.5rem;
+}
+
+.icon {
+  //filter: invert(46%) sepia(67%) saturate(625%) hue-rotate(321deg) brightness(100%) contrast(102%); //В свг можно прямо в фил перекрасить
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 10px;
+  background-position: center;
+}
+
+.menu__link {
+  display: flex;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 19px;
+  top: calc(50% - 19px/2);
+}
+
+.ico_binary {
+  background-image: url(/img/icons/sidebar/binary.png);
+  width: 24px;
+  height: 24px;
+}
+
+.ico_arrow {
+  background-image: url(/img/icons/sidebar/arrow.png);
+  width: 24px;
+  height: 24px;
+}
+
+.ico_check {
+  background-image: url(/img/icons/sidebar/check.png);
+  width: 24px;
+  height: 23.83px;
+}
+
+.ico_clip {
+  background-image: url(/img/icons/sidebar/clip.png);
+  width: 24px;
+  height: 26.68px;
+}
+
+.ico_seek {
+  background-image: url(/img/icons/sidebar/seek.png);
+  width: 24px;
+  height: 24px;
+}
+
+.ico_wall {
+  background-image: url(/img/icons/sidebar/wall.png);
+  width: 24px;
+  height: 20.98px;
+}
+
+
+
+.ico_display {
+  background-image: url(/img/icons/sidebar/display.png);
+  width: 26px;
+  height: 24.67px;
+}
+
+.menu__arrow {
+  border: none;
+  outline: none;
+  background-color: $color-background;
+}
+
+
+
+.ico_bot {
+  background-image: url(/img/icons/sidebar/bot.png);
+  width: 24px;
+  height: 22px;
+}
