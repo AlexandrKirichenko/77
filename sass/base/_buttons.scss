@@ -24,10 +24,11 @@
     border-color: $color-brand;
     color: $color-white;
     padding: 0.6rem 2.1rem 2rem;
+    @extend %transition;
     &:hover{
       background: $color-white;
       color: $color-brand;
-      @extend %transition;
+      border-color: $color-white;
     }
   }
   &_long_colored {
@@ -35,26 +36,27 @@
     border: 1px solid $color-white;
     color: $color-white;
     padding: 0.6rem 5rem;
+    @extend %transition;
     &:hover {
       background: $color-white;
-      border: 1px solid $color-brand;
+      border-color: $color-brand;
       color: $color-brand;
-      @extend %transition;
     }
   }
   &_long_light {
     background: $color-white;
-    border-color: 1px solid $color-white;
+    border: 1px solid $color-white;
     color: $color-brand;
     padding: 0.6rem 2rem 1.9rem;
+    @extend %transition;
     &:hover {
       background: $color-brand;
-      border: 1px solid $color-white;
+      border-color: $color-white;
       color: $color-white;
-      @extend %transition;
     }
   }
 }
+
 
 
 

@@ -1,5 +1,7 @@
 .promo {
   padding: 4.8rem 0 8.1rem 0;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F3F9FF 100%);
+  
   @include mobile {
     padding: 0 0;
   }
@@ -47,9 +49,9 @@
 }
 
 .promo__image {
-  
+  @include bg-img("/img/images/promo.svg",476px,576px);
   @include mobile {
-    max-width: 376px;
+    max-width: 300px;
   }
 }
 

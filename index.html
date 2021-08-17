@@ -62,7 +62,9 @@
             <button class="button button_colored">Free Trial</button>
         </div>
     </div>
-    <div class="promo">
+</header>
+<main>
+    <section class="promo">
         <div class="promo__container container">
             <div class="promo__content">
                 <h1 class="promo__content__header">Digital Signage Made Easy</h1>
@@ -74,11 +76,10 @@
                     <p>60-day Enterprise free trial</p>
                 </div>
             </div>
-            <img src="/img/images/promo.jpg" class="promo__image" alt="promo__logo">
+            <!--            <img src="/img/images/promo.jpg" class="promo__image" alt="promo__logo">-->
+            <div class="promo__image"></div>
         </div>
-    </div>
-</header>
-<main>
+    </section>
     <section class="customers">
         <div class="customers__container container">
             <div class="customers__logo insta"></div>
@@ -168,9 +169,7 @@
                 </div>
             </div>
             <div class="features__link"><a href="#">View all features</a></div>
-            
         </div>
-        
     </section>
     <section class="sysop">
         <div class="sysop__container container">
@@ -201,28 +200,28 @@
             </div>
             <div class="layout-2-column">
                 <div class="signage__block">
-                    <figure>
+                    <div class="block-wrap">
                         <img class="signage__item" src="/img/images/dashboard.png" alt="dashboards">
-                        <figcaption class="signage__text">Dashboards</figcaption>
-                    </figure>
+                        <p class="signage__text">Dashboards</p>
+                    </div>
                 </div>
                 <div class="signage__block">
-                    <figure>
+                    <div class="block-wrap">
                         <img class="signage__item" src="/img/images/calendar.png" alt="calendars">
-                        <figcaption class="signage__text">Calendars</figcaption>
-                    </figure>
+                        <p class="signage__text">Calendars</p>
+                    </div>
                 </div>
                 <div class="signage__block">
-                    <figure>
+                    <div class="block-wrap">
                         <img class="signage__item" src="/img/images/weather.png" alt="weather">
-                        <figcaption class="signage__text">Weather</figcaption>
-                    </figure>
+                        <p class="signage__text">Weather</p>
+                    </div>
                 </div>
                 <div class="signage__block">
-                    <figure>
+                    <div class="block-wrap">
                         <img class="signage__item" src="/img/images/promotional.png" alt="weather">
-                        <figcaption class="signage__text">Promotional</figcaption>
-                    </figure>
+                        <p class="signage__text">Promotional</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -231,8 +230,8 @@
         <div class="container">
             <div class="create-account__block">
                 <div class="icon ico_logo"></div>
-                <h2>Try CloudShow today!</h2>
-                <p class="create-account__description">Try CloudShow today, it's completely free for one device!
+                <h2 class="create-account__header">Try CloudShow today!</h2>
+                <p class="create-account__description">Try CloudShow today, it's completely free for one device! <br>
                     Need more devices? </p>
                 <div  class="create-account__buttons">
                     <button class="button button_long_colored">View Demo</button>
@@ -290,4 +289,5 @@
     <div class="container copyrighting">Copyright © 2007-2020 Binary Fortress Software</div>
 </footer>
 </body>
+<script src="burger.js"></script>
 </html>

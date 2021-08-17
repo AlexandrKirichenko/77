@@ -1,6 +1,8 @@
 .header {
   padding-top: 36px;
-  background: linear-gradient(180deg, #FFFFFF 0%, #F3F9FF 100%);
+  //@include mobile{
+  //  position: fixed;
+  //}
 }
 .header__buttons {
   @include mobile{

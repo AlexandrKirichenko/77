@@ -1,53 +1,41 @@
 .sysop {
   background: $color-background;
-}
-
-.sysop__container {
-  margin-top: 8.5rem;
-  color: $color-white;
-  border-radius: 8px;
-  background:$color-brand url("/img/icons/features/bglog.png")100% 100% no-repeat;
-}
-
-
-
-.sysop__logo {
-  padding: 4.1rem 0 0 4.8rem;
-  @include mobile {
-    padding: 2rem 0 0 2rem;
-    @include mobile {
-      img{
-        width: 90px;
-        height: 32px;
+  padding: 85px 0 93px 0;
+  .sysop__container {
+    color: $color-white;
+    border-radius: 8px;
+    background:$color-brand url("/img/icons/features/bglog.png")100% 100% no-repeat;
+    .sysop__description{
+      @include font(1.6rem, 2.4rem, normal);
+      padding: 0 4.4rem 0.2rem 4.8rem;
+      p {
+        margin-top: 2.2rem;
+      }
+      @include mobile {
+        @include font(1.6rem, 2.4rem, normal);
+        padding: 1rem 0 0 1rem;
       }
     }
+    .sysop__logo {
+      padding: 4.1rem 0 0 4.8rem;
+        @include mobile {
+          padding: 2rem 0 0 2rem;
+          img{
+            width: 90px;
+            height: 32px;
+          }
+        }
+    }
+    .sysop__rate {
+      @include flex(flex-start);
+      padding: 25px 0 35px 48px;
+      @include mobile {
+        padding: 0 0 10px 1opx;
+      }
+    }
+    .sysop__review {
+      @include font(1.6rem, 3rem, 800);
+      padding-right: 15px;
+    }
   }
-}
-
-.sysop__rate {
-  @include flex(flex-start);
-  padding: 1.6rem 0 3.5rem 4.8rem;
-  @include mobile {
-    padding: 0 0 1rem 1rem;
-  }
-}
-
-.sysop__description{
-  @include font(1.6rem, 2.4rem, normal);
-  padding: 0 0 0.2rem 4.8rem;
-  @include mobile {
-    @include font(1.6rem, 2.4rem, normal);
-    padding: 1rem 0 0 1rem;
-  }
-}
-
-.sysop__review {
-  @include font(1.6rem, 3rem, 800);
-  padding-right: 1.5rem;
-}
-
-
-
-.ico_twitter{
-  @include bg-img ("/img/icons/footer/twitter.svg",2.4rem);
 }

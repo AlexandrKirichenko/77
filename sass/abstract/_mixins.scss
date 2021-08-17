@@ -45,4 +45,3 @@
 @mixin mobilesmall {
   @media (max-width: $mobile-small-width) { @content;}
 }
-

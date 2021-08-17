@@ -1,19 +1,24 @@
 .create-account {
   background: $color-brand;
   box-shadow: 0 2px 6px rgba(26, 35, 59, 0.120957);
-}
-
-//TODO: Mb refactor
-.create-account__block{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 39px 0;
-  color: $color-white;
-  .create-account__description{
-    @include font(1.8rem, 3rem, normal);
+  .create-account__block{
+    text-align: center;
+    .create-account__header {
+      padding-top: 28px;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 39px 0;
+    color: $color-white;
+    .create-account__description{
+      @include font(1.8rem, 3rem, normal);
+      @include mobile{
+        text-align: center;
+      }
+    }
+    
   }
-  
 }
 
 .trial__container{
@@ -37,3 +42,11 @@
   }
 }
 
+.create-account__buttons {
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+  }
+}

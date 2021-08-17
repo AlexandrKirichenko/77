@@ -1,18 +1,36 @@
 .signage{
   background: $color-background;
+  .layout-2-column {
+    @include columns($width: 521px);
+    @include font(2.2rem, 3rem, bold);
+    color: $color-hading;
+    .signage__text {
+      text-align: center;
+    }
+    .section__header {
+        padding-top: 93px;
+    }
+    .signage__block {
+      .block-wrap {
+        padding: 34px 71px 15px 72px;
+        @include mobile {
+          padding: 5px;
+        }
+      }
+      @include flex();
+      background: $color-white;
+      margin-top: 35px;
+      .signage__item {
+        border: 6px solid black;
+        background: linear-gradient(229.4deg, #333333 -1.39%, #313131 25.35%, #2A2A2A 34.6%, #1F1F1F 41.8%, #0E0E0E 46.94%, #000000 50.02%, #000000 101.43%);
+        filter: drop-shadow(0px 2px 23px rgba(26, 35, 59, 0.423569));
+        @include mobile {
+          width: 300px;
+        }
+      }
+    }
+  }
 }
 
-.layout-2-column {
-  @include columns($width: 52.1rem);
-  @include font(2.2rem, 3rem, bold);
-  color: $color-hading;
-}
 
-.signage__text {
-  text-align: center;
-}
 
-.signage__block {
-  background: $color-white;
-  margin-top: 3.5rem;
-}

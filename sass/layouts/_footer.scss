@@ -1,13 +1,21 @@
 .footer {
   background: $color-hading;
+  
+  &__container {
+    display: flex;
+  }
 };
 
-.footer__container {
-  display: flex;
-}
 
 .footer-navigation {
   flex-grow:1;
+  @include mobile{
+    flex-direction: column;
+    .logo {
+      text-align: center;
+      padding-top: 20px;
+    }
+  }
   .nav-link {
     color: $color-white;
     text-decoration:none;
@@ -34,10 +42,19 @@
   @include columns($width: 25%);
   @include font(1.5rem, 2rem, 400);
   margin-right: 7rem;
+  @include mobile{
+    margin-right: 0;
+    > * {
+      flex-basis: auto;
+    }
+  }
 }
 
 .one{
   margin: 0 2rem 0 -10rem;
+  @include mobile{
+    margin: 0;
+  }
 }
 
 .copyrighting {
